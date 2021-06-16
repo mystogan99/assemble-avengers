@@ -1,103 +1,122 @@
-# TSDX User Guide
+avengers-assemble
+=================
 
-Congrats! You just saved yourself hours of work by bootstrapping this project with TSDX. Let’s get you oriented with what’s here and how to use it.
+Simple cli for assembling your own avengers.
 
-> This TSDX setup is meant for developing libraries (not apps!) that can be published to NPM. If you’re looking to build a Node app, you could use `ts-node-dev`, plain `ts-node`, or simple `tsc`.
+[![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
+[![Version](https://img.shields.io/npm/v/avengers-assemble.svg)](https://npmjs.org/package/avengers-assemble)
+[![Downloads/week](https://img.shields.io/npm/dw/avengers-assemble.svg)](https://npmjs.org/package/avengers-assemble)
+[![License](https://img.shields.io/npm/l/avengers-assemble.svg)](https://github.com/hrithik098/avengers-assemble/blob/master/package.json)
 
-> If you’re new to TypeScript, checkout [this handy cheatsheet](https://devhints.io/typescript)
+<!-- toc -->
+* [Usage](#usage)
+* [Commands](#commands)
+<!-- tocstop -->
+# Usage
+<!-- usage -->
+```sh-session
+$ npm install -g avengers-assemble
+$ avengers-assemble COMMAND
+running command...
+$ avengers-assemble (-v|--version|version)
+avengers-assemble/0.0.0 darwin-x64 node-v14.17.0
+$ avengers-assemble --help [COMMAND]
+USAGE
+  $ avengers-assemble COMMAND
+...
+```
+<!-- usagestop -->
+# Commands
+<!-- commands -->
+* [`avengers-assemble hello`](#avengers-assemble-hello)
+* [`avengers-assemble help [COMMAND]`](#avengers-assemble-help-command)
+* [`avengers-assemble meet`](#avengers-assemble-meet)
+* [`avengers-assemble setup`](#avengers-assemble-setup)
+* [`avengers-assemble start [FILE]`](#avengers-assemble-start-file)
 
-## Commands
+## `avengers-assemble hello`
 
-TSDX scaffolds your new library inside `/src`.
+Assembles you avengers.
 
-To run TSDX, use:
+```
+USAGE
+  $ avengers-assemble hello
 
-```bash
-npm start # or yarn start
+OPTIONS
+  -n, --now=now  Assemble avengers
+
+EXAMPLE
+  $ avengers-assemble hello
+  hello world from ./src/hello.ts!
 ```
 
-This builds to `/dist` and runs the project in watch mode so any edits you save inside `src` causes a rebuild to `/dist`.
+_See code: [src/commands/hello.ts](https://github.com/hrithik098/avengers-assemble/blob/v0.0.0/src/commands/hello.ts)_
 
-To do a one-off build, use `npm run build` or `yarn build`.
+## `avengers-assemble help [COMMAND]`
 
-To run tests, use `npm test` or `yarn test`.
+display help for avengers-assemble
 
-## Configuration
+```
+USAGE
+  $ avengers-assemble help [COMMAND]
 
-Code quality is set up for you with `prettier`, `husky`, and `lint-staged`. Adjust the respective fields in `package.json` accordingly.
+ARGUMENTS
+  COMMAND  command to show help for
 
-### Jest
-
-Jest tests are set up to run with `npm test` or `yarn test`.
-
-### Bundle Analysis
-
-[`size-limit`](https://github.com/ai/size-limit) is set up to calculate the real cost of your library with `npm run size` and visualize the bundle with `npm run analyze`.
-
-#### Setup Files
-
-This is the folder structure we set up for you:
-
-```txt
-/src
-  index.tsx       # EDIT THIS
-/test
-  blah.test.tsx   # EDIT THIS
-.gitignore
-package.json
-README.md         # EDIT THIS
-tsconfig.json
+OPTIONS
+  --all  see all commands in CLI
 ```
 
-### Rollup
+_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.2/src/commands/help.ts)_
 
-TSDX uses [Rollup](https://rollupjs.org) as a bundler and generates multiple rollup configs for various module formats and build settings. See [Optimizations](#optimizations) for details.
+## `avengers-assemble meet`
 
-### TypeScript
+Open google chrome with new meet link.
 
-`tsconfig.json` is set up to interpret `dom` and `esnext` types, as well as `react` for `jsx`. Adjust according to your needs.
+```
+USAGE
+  $ avengers-assemble meet
 
-## Continuous Integration
-
-### GitHub Actions
-
-Two actions are added by default:
-
-- `main` which installs deps w/ cache, lints, tests, and builds on all pushes against a Node and OS matrix
-- `size` which comments cost comparison of your library on every pull request using [`size-limit`](https://github.com/ai/size-limit)
-
-## Optimizations
-
-Please see the main `tsdx` [optimizations docs](https://github.com/palmerhq/tsdx#optimizations). In particular, know that you can take advantage of development-only optimizations:
-
-```js
-// ./types/index.d.ts
-declare var __DEV__: boolean;
-
-// inside your code...
-if (__DEV__) {
-  console.log('foo');
-}
+OPTIONS
+  -n, --groupName=groupName  Assemble avengers
 ```
 
-You can also choose to install and use [invariant](https://github.com/palmerhq/tsdx#invariant) and [warning](https://github.com/palmerhq/tsdx#warning) functions.
+_See code: [src/commands/meet.ts](https://github.com/hrithik098/avengers-assemble/blob/v0.0.0/src/commands/meet.ts)_
 
-## Module Formats
+## `avengers-assemble setup`
 
-CJS, ESModules, and UMD module formats are supported.
+describe the command here
 
-The appropriate paths are configured in `package.json` and `dist/index.js` accordingly. Please report if any issues are found.
+```
+USAGE
+  $ avengers-assemble setup
 
-## Named Exports
+OPTIONS
+  -a, --apiId=apiId      Get your apiId from telegram.
+  -f, --force
+  -h, --help             show CLI help
+  -z, --apiHash=apiHash  Get your apiHash key from telegram.
 
-Per Palmer Group guidelines, [always use named exports.](https://github.com/palmerhq/typescript#exports) Code split inside your React app instead of your React library.
+EXAMPLE
+  $ avengers-assemble setup --apihash 'somestr' --apiId 605023
+  hello world from ./src/hello.ts!
+```
 
-## Including Styles
+_See code: [src/commands/setup.ts](https://github.com/hrithik098/avengers-assemble/blob/v0.0.0/src/commands/setup.ts)_
 
-There are many ways to ship styles, including with CSS-in-JS. TSDX has no opinion on this, configure how you like.
+## `avengers-assemble start [FILE]`
 
-For vanilla CSS, you can include it at the root directory and add it to the `files` section in your `package.json`, so that it can be imported separately by your users and run through their bundler's loader.
+describe the command here
 
-## Publishing to NPM
+```
+USAGE
+  $ avengers-assemble start [FILE]
 
-We recommend using [np](https://github.com/sindresorhus/np).
+OPTIONS
+  -f, --force
+  -h, --help       show CLI help
+  -n, --name=name  name to print
+```
+
+_See code: [src/commands/start.ts](https://github.com/hrithik098/avengers-assemble/blob/v0.0.0/src/commands/start.ts)_
+<!-- commandsstop -->
