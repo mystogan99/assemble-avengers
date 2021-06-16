@@ -1,12 +1,7 @@
 avengers-assemble
 =================
 
-Simple cli for assembling your own avengers.
-
-[![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
-[![Version](https://img.shields.io/npm/v/avengers-assemble.svg)](https://npmjs.org/package/avengers-assemble)
-[![Downloads/week](https://img.shields.io/npm/dw/avengers-assemble.svg)](https://npmjs.org/package/avengers-assemble)
-[![License](https://img.shields.io/npm/l/avengers-assemble.svg)](https://github.com/hrithik098/avengers-assemble/blob/master/package.json)
+A dead simple cli tool to arrange a google meet call and send the link to telegram group.
 
 <!-- toc -->
 * [Usage](#usage)
@@ -28,29 +23,24 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`avengers-assemble hello`](#avengers-assemble-hello)
+* [`avengers-assemble now`](#avengers-assemble-now)
 * [`avengers-assemble help [COMMAND]`](#avengers-assemble-help-command)
-* [`avengers-assemble meet`](#avengers-assemble-meet)
-* [`avengers-assemble setup`](#avengers-assemble-setup)
-* [`avengers-assemble start [FILE]`](#avengers-assemble-start-file)
+* [`avengers-assemble reset`](#avengers-assemble-reset)
 
-## `avengers-assemble hello`
+## `avengers-assemble now`
 
-Assembles you avengers.
+Initialize the cli. Just follow the simple steps to get you started.
 
 ```
 USAGE
-  $ avengers-assemble hello
+  $ avengers-assemble now
 
 OPTIONS
   -n, --now=now  Assemble avengers
 
 EXAMPLE
-  $ avengers-assemble hello
-  hello world from ./src/hello.ts!
+  $ avengers-assemble now
 ```
-
-_See code: [src/commands/hello.ts](https://github.com/hrithik098/avengers-assemble/blob/v0.0.0/src/commands/hello.ts)_
 
 ## `avengers-assemble help [COMMAND]`
 
@@ -67,56 +57,14 @@ OPTIONS
   --all  see all commands in CLI
 ```
 
-_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.2/src/commands/help.ts)_
+## `avengers-assemble reset`
 
-## `avengers-assemble meet`
-
-Open google chrome with new meet link.
+Resets all your data.
 
 ```
 USAGE
-  $ avengers-assemble meet
+  $ avengers-assemble reset
 
 OPTIONS
   -n, --groupName=groupName  Assemble avengers
 ```
-
-_See code: [src/commands/meet.ts](https://github.com/hrithik098/avengers-assemble/blob/v0.0.0/src/commands/meet.ts)_
-
-## `avengers-assemble setup`
-
-describe the command here
-
-```
-USAGE
-  $ avengers-assemble setup
-
-OPTIONS
-  -a, --apiId=apiId      Get your apiId from telegram.
-  -f, --force
-  -h, --help             show CLI help
-  -z, --apiHash=apiHash  Get your apiHash key from telegram.
-
-EXAMPLE
-  $ avengers-assemble setup --apihash 'somestr' --apiId 605023
-  hello world from ./src/hello.ts!
-```
-
-_See code: [src/commands/setup.ts](https://github.com/hrithik098/avengers-assemble/blob/v0.0.0/src/commands/setup.ts)_
-
-## `avengers-assemble start [FILE]`
-
-describe the command here
-
-```
-USAGE
-  $ avengers-assemble start [FILE]
-
-OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
-```
-
-_See code: [src/commands/start.ts](https://github.com/hrithik098/avengers-assemble/blob/v0.0.0/src/commands/start.ts)_
-<!-- commandsstop -->
