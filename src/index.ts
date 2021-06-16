@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import program from 'commander'
 import { printWordInAscii } from './utils'
 const input = require('input')
