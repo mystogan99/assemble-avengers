@@ -31,7 +31,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "avengers-assemble",
+  "name": "avengers-gather",
   "author": "hrithik098",
   "module": "dist/avengers-assemble.esm.js",
   "size-limit": [
