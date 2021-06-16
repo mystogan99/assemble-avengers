@@ -4,7 +4,7 @@
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "bin": {
-    "avengers-gather": "./dist/index.js"
+    "avengers-gather": "dist/index.js"
   },
   "files": [
     "dist",
@@ -22,7 +22,6 @@
     "size": "size-limit",
     "analyze": "size-limit --why"
   },
-  "peerDependencies": {},
   "husky": {
     "hooks": {
       "pre-commit": "tsdx lint"
@@ -48,7 +47,7 @@
     }
   ],
   "devDependencies": {
-    "@size-limit/preset-small-lib": "^4.12.0",
+    "@size-limit/preset-small-lib": "^4.5.5",
     "@types/lodash": "^4.14.170",
     "husky": "^6.0.0",
     "size-limit": "^4.12.0",
