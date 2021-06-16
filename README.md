@@ -16,9 +16,14 @@ You are about to be taken to telegram site, follow the steps there and copy your
 $ avengers-gather (-v|--version|version)
 avengers-gather/0.0.0 darwin-x64 node-v14.17.0
 $ avengers-gather --help [COMMAND]
-USAGE
-  $ avengers-gather COMMAND
-...
+Options:
+  -V, --version   output the version number
+  -h, --help      display help for command
+
+Commands:
+  now             Risky command you are about to send a BOLO for all avengers registered with S.H.I.E.L.D
+  reset           Resets all congfig.
+  help [command]  display help for command
 ```
 <!-- usagestop -->
 # Commands
