@@ -1,0 +1,77 @@
+{
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build",
+    "size": "size-limit",
+    "analyze": "size-limit --why"
+  },
+  "peerDependencies": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "name": "avengers-assemble",
+  "author": "hrithik098",
+  "module": "dist/avengers-assemble.esm.js",
+  "size-limit": [
+    {
+      "path": "dist/avengers-assemble.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/avengers-assemble.esm.js",
+      "limit": "10 KB"
+    }
+  ],
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "^4.12.0",
+    "@types/lodash": "^4.14.170",
+    "husky": "^6.0.0",
+    "size-limit": "^4.12.0",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.3.0",
+    "typescript": "^4.3.2"
+  },
+  "dependencies": {
+    "@types/chalk": "^2.2.0",
+    "@types/clear": "^0.1.1",
+    "@types/figlet": "^1.5.1",
+    "@types/flat-cache": "^2.0.0",
+    "@types/inquirer": "^7.3.1",
+    "@types/node": "^15.12.2",
+    "@types/open": "^6.2.1",
+    "chalk": "^4.1.1",
+    "clear": "^0.1.0",
+    "commander": "^7.2.0",
+    "configstore": "^6.0.0",
+    "figlet": "^1.5.0",
+    "flat-cache": "^3.0.4",
+    "input": "^1.0.1",
+    "inquirer": "^8.1.1",
+    "lodash": "^4.17.21",
+    "lodash-es": "^4.17.21",
+    "open": "^8.2.0",
+    "telegram": "^1.7.7"
+  }
+}
