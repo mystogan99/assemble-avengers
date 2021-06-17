@@ -8,7 +8,8 @@
   },
   "files": [
     "dist",
-    "src"
+    "src",
+    "bin"
   ],
   "engines": {
     "node": ">=10"
