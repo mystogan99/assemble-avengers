@@ -4,7 +4,7 @@
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "bin": {
-    "avengers-gather": "dist/index.js"
+    "avengers-gather": "bin/preFlight.js"
   },
   "files": [
     "dist",
@@ -16,13 +16,12 @@
   "scripts": {
     "start": "tsdx watch",
     "build": "tsdx build",
-    "test": "tsdx test --passWithNoTests && yarn shebang",
+    "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
     "prepare": "tsdx build",
     "size": "size-limit",
     "analyze": "size-limit --why",
-    "shebang": "echo '#!/usr/bin/env node\n' \"$(cat dist/index.js)\" > dist/index.js",
-    "publish": "tsdx build && yarn shebang"
+    "shebang": "echo '#!/usr/bin/env node\n' \"$(cat dist/index.js)\" > dist/index.js"
   },
   "husky": {
     "hooks": {
@@ -72,6 +71,7 @@
     "lodash": "^4.17.21",
     "lodash-es": "^4.17.21",
     "open": "^8.2.0",
+    "rollup-plugin-add-shebang": "^0.3.1",
     "telegram": "^1.7.7"
   }
 }
