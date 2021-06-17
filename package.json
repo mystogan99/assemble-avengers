@@ -15,8 +15,8 @@
   },
   "scripts": {
     "start": "tsdx watch",
-    "build": "tsdx build && yarn shebang",
-    "test": "tsdx test --passWithNoTests",
+    "build": "tsdx build",
+    "test": "tsdx test --passWithNoTests && yarn shebang",
     "lint": "tsdx lint",
     "prepare": "tsdx build",
     "size": "size-limit",
