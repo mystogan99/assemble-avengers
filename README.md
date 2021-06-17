@@ -14,7 +14,7 @@ $ npm install -g avengers-gather
 $ avengers-gather now
 You are about to be taken to telegram site, follow the steps there and copy your api-id and api-hash....
 $ avengers-gather (-v|--version|version)
-avengers-gather/0.0.0 darwin-x64 node-v14.17.0
+v1.0.10
 $ avengers-gather --help [COMMAND]
 Options:
   -V, --version   output the version number
@@ -24,6 +24,9 @@ Commands:
   now             Risky command you are about to send a BOLO for all avengers registered with S.H.I.E.L.D
   reset           Resets all congfig.
   help [command]  display help for command
+  
+$ avengers-gather reset
+"Reseting everything...."
 ```
 <!-- usagestop -->
 # Commands
@@ -49,7 +52,7 @@ EXAMPLE
 
 ## `avengers-gather help [COMMAND]`
 
-display help for avengers-gather
+Check all available commands.
 
 ```
 USAGE
