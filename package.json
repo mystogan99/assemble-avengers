@@ -9,7 +9,8 @@
   "files": [
     "dist",
     "src",
-    "bin"
+    "bin",
+    "static"
   ],
   "engines": {
     "node": ">=10"
