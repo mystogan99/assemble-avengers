@@ -8,6 +8,9 @@ A dead simple cli tool to arrange a google meet call and send the link to telegr
 * [Commands](#commands)
 <!-- tocstop -->
 # Usage
+
+![usage](static/final_draft.gif)
+
 <!-- usage -->
 ```sh-session
 $ npm install -g avengers-gather
