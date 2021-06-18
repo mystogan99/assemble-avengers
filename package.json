@@ -1,16 +1,16 @@
 {
-  "version": "1.0.12",
+  "version": "0.0.1",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
+  "repository": "hrithik098/avengers-gather",
   "bin": {
     "avengers-gather": "bin/preFlight.js"
   },
   "files": [
     "dist",
     "src",
-    "bin",
-    "static"
+    "bin"
   ],
   "engines": {
     "node": ">=10"
