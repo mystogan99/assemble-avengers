@@ -8,6 +8,7 @@ A dead simple cli tool to arrange a google meet call and send the link to telegr
 * [Commands](#commands)
 <!-- tocstop -->
 # Usage
+> Name changed now its assemble-avengers.
 
 ![usage](static/final_draft.gif)
 
