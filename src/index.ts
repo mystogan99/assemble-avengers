@@ -43,7 +43,7 @@ async function telegramSetup(stringSession: StringSession, apiId: number, apiHas
 }
 
 program
-  .version("0.0.1")
+  .version("1.0.0")
   .command("now")
   .description("Risky command you are about to send a BOLO for all avengers registered with S.H.I.E.L.D")
   .action(async () => {

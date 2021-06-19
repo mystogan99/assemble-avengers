@@ -3,9 +3,9 @@
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
-  "repository": "hrithik098/avengers-gather",
+  "repository": "hrithik098/assemble-avengers",
   "bin": {
-    "avengers-gather": "bin/preFlight.js"
+    "assemble-avengers": "bin/preFlight.js"
   },
   "files": [
     "dist",
@@ -36,7 +36,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "avengers-gather",
+  "name": "assemble-avengers",
   "author": "hrithik098",
   "module": "dist/avengers-gather.esm.js",
   "size-limit": [
