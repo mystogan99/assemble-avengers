@@ -1,4 +1,4 @@
-avengers-gather
+assemble-avengers
 =================
 
 A dead simple cli tool to arrange a google meet call and send the link to telegram group.
@@ -13,12 +13,12 @@ A dead simple cli tool to arrange a google meet call and send the link to telegr
 
 <!-- usage -->
 ```sh-session
-$ npm install -g avengers-gather
-$ avengers-gather now
+$ npm install -g assemble-avengers
+$ assemble-avengers now
 You are about to be taken to telegram site, follow the steps there and copy your api-id and api-hash....
-$ avengers-gather (-v|--version|version)
+$ assemble-avengers (-v|--version|version)
 v1.0.10
-$ avengers-gather --help [COMMAND]
+$ assemble-avengers --help [COMMAND]
 Options:
   -V, --version   output the version number
   -h, --help      display help for command
@@ -28,38 +28,38 @@ Commands:
   reset           Resets all congfig.
   help [command]  display help for command
   
-$ avengers-gather reset
+$ assemble-avengers reset
 "Reseting everything...."
 ```
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`avengers-gather now`](#avengers-gather-now)
-* [`avengers-gather help [COMMAND]`](#avengers-gather-help-command)
-* [`avengers-gather reset`](#avengers-gather-reset)
+* [`assemble-avengers now`](#assemble-avengers-now)
+* [`assemble-avengers help [COMMAND]`](#assemble-avengers-help-command)
+* [`assemble-avengers reset`](#assemble-avengers-reset)
 
-## `avengers-gather now`
+## `assemble-avengers now`
 
 Initialize the cli. Just follow the simple steps to get you started.
 
 ```
 USAGE
-  $ avengers-gather now
+  $ assemble-avengers now
 
 OPTIONS
   -n, --now=now  gather avengers
 
 EXAMPLE
-  $ avengers-gather now
+  $ assemble-avengers now
 ```
 
-## `avengers-gather help [COMMAND]`
+## `assemble-avengers help [COMMAND]`
 
 Check all available commands.
 
 ```
 USAGE
-  $ avengers-gather help [COMMAND]
+  $ assemble-avengers help [COMMAND]
 
 ARGUMENTS
   COMMAND  command to show help for
@@ -68,11 +68,11 @@ OPTIONS
   --all  see all commands in CLI
 ```
 
-## `avengers-gather reset`
+## `assemble-avengers reset`
 
 Resets all your data.
 
 ```
 USAGE
-  $ avengers-gather reset
+  $ assemble-avengers reset
 ```
